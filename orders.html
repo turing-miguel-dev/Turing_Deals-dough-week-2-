@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Orders | Deals Dough Hub Pizza House</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,800;1,9..144,700;1,9..144,900&family=Nunito+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="logo" href="index.html" aria-label="Deals Dough Hub Pizza House, home">
+     
+      <img src="m1.jpg.png" alt="Deals Dough Hub Pizza House logo">
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="orders.html" class="active" aria-current="page">Orders</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p class="sidebar-tag">Good Food,<br>Good Moments!</p>
+  </aside>
+
+  <div class="main">
+    <header class="topbar">
+      <p>Hot, fresh &amp; made with love. Order your favorites today.</p>
+      <a class="btn btn-dark" href="orders.html">🛒 Cart</a>
+    </header>
+
+    <main class="page">
+      <h1 class="page-title">Place your order</h1>
+      <p class="lead">Choose how many of each you want, add your details, and send. We&rsquo;ll confirm your order and total by message.</p>
+
+      <form class="order-form" action="mailto:orders@dealsdoughhub.example" method="post" enctype="text/plain">
+        <fieldset id="sharing">
+          <legend>Pizza for Sharing</legend>
+          <ul class="items">
+          <li class="item">
+            <div><label for="sharing_1">Classic Pepperoni (Large)</label><p>Pepperoni, mozzarella, house tomato sauce</p></div>
+            <span class="price">&#8369;499</span>
+            <input type="number" id="sharing_1" name="Classic Pepperoni (Large)" min="0" max="20" value="0" aria-label="Quantity of Classic Pepperoni (Large)">
+          </li>
+          <li class="item">
+            <div><label for="sharing_2">Garden Veggie (Large)</label><p>Peppers, olives, mushrooms, onions</p></div>
+            <span class="price">&#8369;459</span>
+            <input type="number" id="sharing_2" name="Garden Veggie (Large)" min="0" max="20" value="0" aria-label="Quantity of Garden Veggie (Large)">
+          </li>
+          <li class="item">
+            <div><label for="sharing_3">Extra Cheesy (Large)</label><p>Four-cheese blend with basil</p></div>
+            <span class="price">&#8369;529</span>
+            <input type="number" id="sharing_3" name="Extra Cheesy (Large)" min="0" max="20" value="0" aria-label="Quantity of Extra Cheesy (Large)">
+          </li>
+          </ul>
+        </fieldset>
+        <fieldset id="pasta">
+          <legend>Pasta for Me</legend>
+          <ul class="items">
+          <li class="item">
+            <div><label for="pasta_1">Creamy Carbonara</label><p>Cream sauce, bacon, parmesan</p></div>
+            <span class="price">&#8369;199</span>
+            <input type="number" id="pasta_1" name="Creamy Carbonara" min="0" max="20" value="0" aria-label="Quantity of Creamy Carbonara">
+          </li>
+          <li class="item">
+            <div><label for="pasta_2">Baked Spaghetti</label><p>Tomato meat sauce, melted cheese</p></div>
+            <span class="price">&#8369;189</span>
+            <input type="number" id="pasta_2" name="Baked Spaghetti" min="0" max="20" value="0" aria-label="Quantity of Baked Spaghetti">
+          </li>
+          </ul>
+        </fieldset>
+        <fieldset id="solo">
+          <legend>Solo Meal</legend>
+          <ul class="items">
+          <li class="item">
+            <div><label for="solo_1">Personal Pepperoni</label><p>8-inch pizza with a drink</p></div>
+            <span class="price">&#8369;169</span>
+            <input type="number" id="solo_1" name="Personal Pepperoni" min="0" max="20" value="0" aria-label="Quantity of Personal Pepperoni">
+          </li>
+          <li class="item">
+            <div><label for="solo_2">Personal Cheese</label><p>8-inch pizza with a drink</p></div>
+            <span class="price">&#8369;159</span>
+            <input type="number" id="solo_2" name="Personal Cheese" min="0" max="20" value="0" aria-label="Quantity of Personal Cheese">
+          </li>
+          </ul>
+        </fieldset>
+        <fieldset id="sides">
+          <legend>Sides &amp; Desserts</legend>
+          <ul class="items">
+          <li class="item">
+            <div><label for="sides_1">Garlic Bread</label><p>Six toasted slices with butter</p></div>
+            <span class="price">&#8369;99</span>
+            <input type="number" id="sides_1" name="Garlic Bread" min="0" max="20" value="0" aria-label="Quantity of Garlic Bread">
+          </li>
+          <li class="item">
+            <div><label for="sides_2">Chicken Wings</label><p>Six pieces, your choice of glaze</p></div>
+            <span class="price">&#8369;189</span>
+            <input type="number" id="sides_2" name="Chicken Wings" min="0" max="20" value="0" aria-label="Quantity of Chicken Wings">
+          </li>
+          <li class="item">
+            <div><label for="sides_3">Cinnamon Rolls</label><p>Four warm rolls with icing</p></div>
+            <span class="price">&#8369;119</span>
+            <input type="number" id="sides_3" name="Cinnamon Rolls" min="0" max="20" value="0" aria-label="Quantity of Cinnamon Rolls">
+          </li>
+          </ul>
+        </fieldset>
+
+        <fieldset>
+          <legend>Your details</legend>
+          <div class="fields">
+            <label>Name<input type="text" name="Customer name" required autocomplete="name"></label>
+            <label>Phone number<input type="tel" name="Phone" required autocomplete="tel"></label>
+            <label class="wide">Delivery address (leave blank for pickup)<input type="text" name="Address" autocomplete="street-address"></label>
+            <div class="wide choice" role="radiogroup" aria-label="Pickup or delivery">
+              <label><input type="radio" name="Method" value="Pickup" checked> Pickup</label>
+              <label><input type="radio" name="Method" value="Delivery"> Delivery</label>
+            </div>
+            <label class="wide">Notes<textarea name="Notes" rows="3" placeholder="Allergies, extra napkins, call at the gate..."></textarea></label>
+          </div>
+        </fieldset>
+        <button class="btn" type="submit">Send order</button>
+      </form>
+    </main>
+     <footer class="footer">    
+      <a class="footer-logo" href="index.html">
+        <img src="m1.jpg.png" alt="Deals Dough Hub Pizza House logo">
+      </a>
+     
+      <span>Freshly baked happiness, one slice at a time.</span>
+      <small>&copy; 2026 Deals Dough Hub Pizza House. All rights reserved.</small>
+    </footer>
+  </div>
+
+</body>
+</html>
